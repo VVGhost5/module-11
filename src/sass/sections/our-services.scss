@@ -1,0 +1,58 @@
+.our-services {
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__list-item {
+    width: 381px;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    padding-left: 82px;
+  }
+
+  &__card {
+    margin-bottom: 104px;
+  }
+
+  &__card_photography {
+    background-image: url("../images/our-services/alarm.svg");
+  }
+
+  &__card_web-design {
+    background-image: url("../images/our-services/linegraph.svg");
+  }
+
+  &__card_creativity {
+    background-image: url("../images/our-services/computerok.svg");
+  }
+
+  &__card_seo {
+    background-image: url("../images/our-services/book.svg");
+  }
+
+  &__card_css-html {
+    background-image: url("../images/our-services/home.svg");
+  }
+
+  &__card_digital {
+    background-image: url("../images/our-services/image.svg");
+  }
+
+  &__item-title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    @include font(14px, 400, 1.2, $title-font, $section-title-text-color);
+  }
+
+  &__item-description {
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: $main-font;
+    color: $section-text-color;
+    @include font(15px, 400, 1.6, $main-font, $section-text-color);
+  }
+
+}

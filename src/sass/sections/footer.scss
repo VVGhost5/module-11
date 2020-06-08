@@ -1,0 +1,78 @@
+.footer {
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 11px;
+    padding-bottom: 26px;
+    border-top: 1px solid $footer-border-color;
+  }
+
+  &__public-info {
+    font-size: 14px;
+    font-family: $footer-font;
+    color: $footer-text-color;
+    line-height: 40px;
+  }
+
+  &__public-info-link {
+    font-size: 14px;
+    font-family: $footer-font;
+    color: $link-text-color;
+  }
+
+  &__public-info-link:hover {
+    cursor: pointer;
+  }
+}
+
+
+
+.form {
+  display: flex;
+  justify-content: center;
+
+  &__input {
+    padding-left: 14px;
+    width: 230px;
+    height: 40px;
+    outline: none;
+    border: 1px solid $footer-border-color;
+  }
+
+  &__input::placeholder {
+    font-style: italic;
+    @include font(15px, 400, 1.6, $main-font, $footer-placeholder-color);
+  }
+
+  &__input:required:focus:valid:not(:placeholder-shown) {
+    outline: 1px solid green;
+  }
+
+  &__input:required:focus:invalid:not(:placeholder-shown) {
+    outline: 1px solid red;
+  }
+
+  &__button {
+    display: block;
+    width: 150px;
+    height: 40px;
+    outline: none;
+    border: 1px solid transparent;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: $footer-button-color;
+    font-family: $footer-font;
+    color: $main-text-color;
+    transition: all 0.2s linear;
+    @include font(14px, bold, 1.2, $footer-font, $main-text-color);
+  }
+
+  &__button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid $footer-button-color;
+    color: $footer-button-color;
+  }
+}

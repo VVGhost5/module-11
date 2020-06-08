@@ -1,0 +1,105 @@
+.meet-our-team {
+  padding-bottom: 86px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+    width: 380px;
+  }
+
+  &__card-image-wrapper {
+    position: relative;
+    transition: all 0.2s linear;
+  }
+
+  &__card-image-wrapper:hover {
+    box-shadow: 10px 10px 0px 0 rgb(149, 225, 211);
+    transform: translate(-10px, -10px);
+  }
+
+  &__card-image-wrapper:hover {
+    .meet-our-team__overlay {
+      opacity: 1;
+    }
+  }
+
+  &__card-image {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  &__card-title {
+    text-transform: uppercase;
+    text-align: center;
+    @include font(14px, 400, 1.2, $main-font, $section-title-text-color);
+  }
+
+  &__card-sub-title {
+    font-style: italic;
+    text-align: center;
+    @include font(15px, 400, 1.6, $main-font, $section-text-color);
+  }
+
+  &__overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg,
+        rgba(252, 227, 138, 0.9) 0%,
+        rgba(243, 129, 129, 0.9) 100%);
+    transition: all 0.2s linear;
+  }
+}
+
+.socials {
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__list-item {
+    width: 56px;
+    height: 56px;
+    background-color: $socials-bgc-color;
+    transition: background-color 0.2s linear;
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__list-item:hover {
+    background-color: $link-text-color;
+  }
+
+  &__list-item:not(:last-child) {
+    border-right: 1px solid transparent;
+    background-clip: content-box;
+  }
+
+  &__list-item-icon {
+    width: 28px;
+    height: 28px;
+    fill: $link-text-color;
+    transition: fill 0.2s linear;
+  }
+
+  &__list-item:hover .socials__list-item-icon {
+    fill: $main-text-color;
+  }
+
+}

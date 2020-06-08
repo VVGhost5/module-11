@@ -1,0 +1,50 @@
+.sections {
+
+  &__amazing-services {
+    padding-top: 54px;
+  }
+
+  &__upper-title {
+    margin-bottom: 18px;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    font-family: $coursive-title-font;
+    color: $section-title-text-color;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    font-family: $title-font;
+    color: $section-title-text-color;
+  }
+
+  &__title::after {
+    content: "";
+    display: block;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-bottom: 64px;
+    margin-left: auto;
+    width: 60px;
+    height: 3px;
+    background-color: $section-text-line-color;
+  }
+
+  &__descrpiption {
+    margin-right: auto;
+    margin-bottom: 92px;
+    margin-left: auto;
+    width: 81.6%;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;
+    font-family: $main-font;
+    color: $section-text-color;
+  }
+
+}

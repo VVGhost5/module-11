@@ -1,0 +1,12 @@
+@import 'normalize.scss';
+@import 'base.scss';
+@import './helpers/fonts';
+@import './helpers/variables';
+@import './helpers/mixins';
+@import './base';
+@import './components/container.scss';
+@import './components/sections.scss';
+@import './sections/header.scss';
+@import './sections/our-services.scss';
+@import './sections/meet-our-team.scss';
+@import './sections/footer.scss';
